@@ -6,6 +6,9 @@ const nextConfig = {
   output: "export",
   basePath: `/${repo}`,
   assetPrefix: `/${repo}/`,
+  env: {
+    NEXT_PUBLIC_BASE_PATH: `/${repo}`,
+  },
   typescript: {
     ignoreBuildErrors: true,
   },

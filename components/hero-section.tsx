@@ -1,5 +1,6 @@
 import type { CSSProperties } from "react"
-import { AlphabetBlock, PuzzlePiece, SoundWaves, SpeechStar, WaveLine } from "./site-decorations"
+import { HeroPortrait } from "./hero-portrait"
+import { AlphabetBlock, PuzzlePiece, SoundWaves, WaveLine } from "./site-decorations"
 
 export function HeroSection() {
   return (
@@ -16,9 +17,7 @@ export function HeroSection() {
       </div>
 
       <div className="container mx-auto px-6 text-center relative z-10">
-        <div className="flex justify-center mb-6">
-          <SpeechStar size={96} />
-        </div>
+        <HeroPortrait />
 
         <p className="text-muted-foreground font-sans uppercase tracking-[0.3em] text-xs md:text-sm mb-6 text-balance">
           Dedicat Antoniei Ariadna Ruba, psihopedagog și viitoare specialistă în terapia limbajului
