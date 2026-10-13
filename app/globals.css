@@ -176,3 +176,76 @@
     transform: rotate(-8deg);
   }
 }
+
+/* Banda de comunicare si tabla cu jetoane */
+@keyframes picto-drop {
+  0% {
+    translate: 0 60px;
+    scale: 1.25;
+    rotate: 8deg;
+    opacity: 0;
+  }
+  70% {
+    translate: 0 -4px;
+    scale: 0.96;
+    rotate: 0deg;
+    opacity: 1;
+  }
+  100% {
+    translate: 0 0;
+    scale: 1;
+    opacity: 1;
+  }
+}
+
+.animate-picto-drop {
+  animation: picto-drop 0.45s cubic-bezier(0.2, 0.9, 0.3, 1.2) both;
+}
+
+@keyframes picto-shake {
+  0%, 100% { translate: 0 0; }
+  20%, 60% { translate: -7px 0; }
+  40%, 80% { translate: 7px 0; }
+}
+
+.animate-picto-shake {
+  animation: picto-shake 0.45s ease-in-out;
+}
+
+@keyframes picto-prompt {
+  0%, 100% { scale: 1; filter: drop-shadow(0 0 0 transparent); }
+  50% { scale: 1.1; filter: drop-shadow(0 0 12px var(--accent)); }
+}
+
+.animate-picto-prompt {
+  animation: picto-prompt 1.1s ease-in-out infinite;
+}
+
+@keyframes strip-glow {
+  0%, 100% { box-shadow: 0 0 0 0 transparent, 0 20px 40px -12px rgb(0 0 0 / 0.35); }
+  50% { box-shadow: 0 0 36px 6px var(--accent), 0 20px 40px -12px rgb(0 0 0 / 0.35); }
+}
+
+.animate-strip-glow {
+  animation: strip-glow 2.2s ease-in-out infinite;
+}
+
+@keyframes token-pop {
+  0% { scale: 0; rotate: -140deg; opacity: 0; }
+  65% { scale: 1.45; rotate: 12deg; opacity: 1; }
+  100% { scale: 1; rotate: 0deg; opacity: 1; }
+}
+
+.animate-token-pop {
+  animation: token-pop 0.6s cubic-bezier(0.2, 0.9, 0.3, 1.2) both;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-picto-drop,
+  .animate-picto-shake,
+  .animate-picto-prompt,
+  .animate-strip-glow,
+  .animate-token-pop {
+    animation: none;
+  }
+}

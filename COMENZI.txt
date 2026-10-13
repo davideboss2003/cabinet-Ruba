@@ -28,6 +28,7 @@ Deschide: http://localhost:3000/cartonas-magic
 
 components/hero-section.tsx     titlul si dedicatia
 components/room-explorer.tsx    domeniile, "Stiai ca?" si mesajele
+components/communication-strip.tsx  banda cu pictograme (propozitia: sentence)
 components/cartonas-card.tsx    cartonasul si intrebarea de pe verso
 components/room-3d.tsx          cabinetul 3D (numele din cuburi: NAME)
 lib/notify.ts                   textul notificarii
