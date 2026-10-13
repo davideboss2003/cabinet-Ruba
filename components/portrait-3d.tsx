@@ -79,6 +79,9 @@ export default function Portrait3D({ onReady, onContextLost }: { onReady?: () =>
       <hemisphereLight args={["#ffffff", "#9a8fd8", 2.6]} />
       <directionalLight position={[2, 3, 4]} intensity={2.2} />
       <directionalLight position={[-3, 1, 2]} intensity={0.7} color="#ffd9c2" />
+      {/* Lumini din spate, ca parul inchis sa se desprinda de fundalul intunecat */}
+      <pointLight position={[-1.4, 0.7, -1.2]} intensity={14} color="#ff9db0" />
+      <pointLight position={[1.4, 0.7, -1.2]} intensity={14} color="#b9a8ff" />
       <Suspense fallback={null}>
         <Bust onReady={onReady} />
         <Pedestal />

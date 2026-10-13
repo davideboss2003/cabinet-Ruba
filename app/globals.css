@@ -249,3 +249,19 @@
     animation: none;
   }
 }
+
+/* Aura portretului */
+@keyframes halo {
+  0%, 100% { scale: 1; }
+  50% { scale: 1.08; }
+}
+
+.animate-halo {
+  animation: halo 5s ease-in-out infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-halo {
+    animation: none;
+  }
+}
