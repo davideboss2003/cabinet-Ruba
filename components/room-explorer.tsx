@@ -53,7 +53,7 @@ const stages: Stage[] = [
     id: "social",
     name: "Socializare",
     tech: "Abilitățile sociale nu se predau, se exersează: contact vizual, așteptarea rândului, inițierea și menținerea unei conversații, joc de rol în situații cât mai reale.",
-    funFact: "În 1997, psihologul Arthur Aron a pus perechi de străini să își răspundă la 36 de întrebări din ce în ce mai personale. În 45 de minute, mulți se simțeau mai apropiați decât de oameni pe care îi știau de ani.",
+    funFact: "În 1997, psihologul Arthur Aron a pus perechi de străini să își răspundă la 36 de întrebări din ce în ce mai personale. După 45 de minute, se simțeau surprinzător de apropiați.",
     note: "La capitolul ăsta am eu nevoie de câteva ședințe. Începem chiar cu exercițiul de mai jos.",
   },
 ]
