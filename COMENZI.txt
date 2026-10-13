@@ -14,15 +14,15 @@ Steluta "ACCEPTAT" ramane salvata doar in browserul in care s-a apasat.
 
 npm install
 npm run dev
-Deschide: http://localhost:3000/cartonas-magic
+Deschide: http://localhost:3000/cabinet-Ruba
 
 --- 3) PUBLICARE PE GITHUB PAGES ---
 
-1) Creeaza repo pe GitHub (Public, nume: cartonas-magic)
+1) Creeaza repo pe GitHub (Public, nume: cabinet-Ruba)
    Daca alegi alt nume, schimba-l si in next.config.mjs (const repo).
 2) Settings -> Pages -> Source: GitHub Actions
 3) git push (vezi comenzile din proiectul Andreei, sunt aceleasi)
-4) Link: https://USERNAME.github.io/cartonas-magic/
+4) Link: https://USERNAME.github.io/cabinet-Ruba/
 
 --- 4) UNDE SCHIMBI TEXTELE ---
 

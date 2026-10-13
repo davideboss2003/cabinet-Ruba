@@ -1,6 +1,6 @@
 /** @type {import('next').NextConfig} */
-// Numele repo-ului de pe GitHub (apare in link: https://USERNAME.github.io/cartonas-magic/)
-const repo = 'cartonas-magic';
+// Numele repo-ului de pe GitHub (apare in link: https://USERNAME.github.io/cabinet-Ruba/)
+const repo = 'cabinet-Ruba';
 
 const nextConfig = {
   output: "export",
