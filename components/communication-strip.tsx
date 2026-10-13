@@ -36,33 +36,39 @@ const sentence: Picto[] = [
     ),
   },
   {
-    id: "vreau",
-    label: "vreau",
+    id: "am",
+    label: "am",
     color: "#4fb58f",
     icon: (
-      <g fill="none" stroke="var(--foreground)" strokeWidth="2.500" strokeLinecap="round" strokeLinejoin="round">
-        <path d="M14 30q10-8 20 0l8 8q4 4 0 8t-8 0l-6-6" fill="#ffd9b8" />
-        <path d="M66 30q-10-8-20 0l-8 8q-4 4 0 8t8 0l6-6" fill="#ffd9b8" />
-        <path d="M40 62c-9-6-12-10-12-14a6 6 0 0 1 12-2 6 6 0 0 1 12 2c0 4-3 8-12 14z" fill="var(--rose)" />
+      <g stroke="var(--foreground)" strokeWidth="2.500" strokeLinecap="round" strokeLinejoin="round">
+        <path d="M12 52q8-6 18-2l10 4h12q5 0 5 5t-5 5H40l-10-2-6 6H12z" fill="#ffd9b8" />
+        <path d="M28 20h24v20a6 6 0 0 1-6 6H34a6 6 0 0 1-6-6z" fill="var(--mint)" />
+        <path d="M24 26h32M40 20v-6m0 0q-6-6-9 0 3 5 9 0zm0 0q6-6 9 0-3 5-9 0z" fill="var(--rose)" />
       </g>
     ),
   },
   {
-    id: "cafea",
-    label: "o cafea",
+    id: "intrebare",
+    label: "o întrebare",
     color: "#f08a3c",
     icon: (
-      <g stroke="var(--foreground)" strokeWidth="2.500" strokeLinecap="round" strokeLinejoin="round">
-        <path d="M18 34h36v16a14 14 0 0 1-14 14h-8a14 14 0 0 1-14-14z" fill="var(--accent)" />
-        <path d="M54 40h5a7 7 0 0 1 0 14h-6" fill="none" />
-        <path d="M27 26q-4-6 0-12M36 26q-4-6 0-12M45 26q-4-6 0-12" fill="none" strokeWidth="2" opacity="0.6" />
-        <path d="M14 70h46" />
-      </g>
+      <>
+        <path
+          d="M16 10h48a8 8 0 0 1 8 8v30a8 8 0 0 1-8 8H42L28 70V56H16a8 8 0 0 1-8-8V18a8 8 0 0 1 8-8z"
+          fill="var(--accent)"
+          stroke="var(--foreground)"
+          strokeWidth="2.500"
+          strokeLinejoin="round"
+        />
+        <text x="40" y="46" textAnchor="middle" fontSize="36" fontWeight="700" fill="var(--foreground)" className="font-sans">
+          ?
+        </text>
+      </>
     ),
   },
   {
     id: "tine",
-    label: "cu tine",
+    label: "pentru tine",
     color: "#f2c230",
     icon: (
       <>
@@ -74,7 +80,7 @@ const sentence: Picto[] = [
 ]
 
 // Ordinea in care stau amestecate pe masa (fixa, ca sa arate la fel la fiecare incarcare)
-const tableOrder = ["cafea", "tine", "eu", "vreau"]
+const tableOrder = ["intrebare", "tine", "eu", "am"]
 const tilts = [-5, 4, -3, 6]
 
 function PictoCard({ picto }: { picto: Picto }) {
@@ -86,7 +92,7 @@ function PictoCard({ picto }: { picto: Picto }) {
       <svg viewBox="0 0 80 80" className="w-full flex-1 min-h-0" aria-hidden="true">
         {picto.icon}
       </svg>
-      <span className="font-sans font-bold text-[13px] sm:text-base text-[#2a2440] leading-tight whitespace-nowrap">
+      <span className="font-sans font-bold text-[11px] sm:text-base text-[#2a2440] leading-tight whitespace-nowrap">
         {picto.label}
       </span>
     </div>
@@ -163,10 +169,10 @@ export function CommunicationStrip() {
           {done ? (
             <div aria-live="polite" className="text-center mt-10">
               <p className="font-serif text-2xl md:text-4xl text-foreground font-semibold mb-3 text-balance">
-                „Eu vreau o cafea cu tine.”
+                „Eu am o întrebare pentru tine.”
               </p>
               <p className="font-sans text-muted-foreground max-w-md mx-auto mb-6 text-balance">
-                Propoziție corectă, formată fără niciun prompt verbal. Cererea oficială e pe cartonașul de mai jos.
+                Propoziție corectă, formată fără niciun prompt verbal. Întrebarea te așteaptă pe spatele cartonașului de mai jos.
               </p>
               <a
                 href="#cartonas"
