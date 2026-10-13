@@ -1,0 +1,33 @@
+=== INVITATIE "CARTONAS MAGIC" (Antonia) ===
+
+--- 1) NOTIFICAREA CAND APASA "ACCEPT PLANUL" ---
+
+Setarile sunt in lib/config.ts.
+
+a) Email: vine pe adresa din lib/config.ts, cu subiectul "Plan acceptat!".
+b) Push pe telefon (optional): aplicatia "ntfy" -> "+" -> Subscribe to topic
+   -> numele din ntfyTopic (lib/config.ts).
+
+Steluta "ACCEPTAT" ramane salvata doar in browserul in care s-a apasat.
+
+--- 2) TEST LOCAL ---
+
+npm install
+npm run dev
+Deschide: http://localhost:3000/cartonas-magic
+
+--- 3) PUBLICARE PE GITHUB PAGES ---
+
+1) Creeaza repo pe GitHub (Public, nume: cartonas-magic)
+   Daca alegi alt nume, schimba-l si in next.config.mjs (const repo).
+2) Settings -> Pages -> Source: GitHub Actions
+3) git push (vezi comenzile din proiectul Andreei, sunt aceleasi)
+4) Link: https://USERNAME.github.io/cartonas-magic/
+
+--- 4) UNDE SCHIMBI TEXTELE ---
+
+components/hero-section.tsx     titlul si dedicatia
+components/room-explorer.tsx    domeniile, "Stiai ca?" si mesajele
+components/cartonas-card.tsx    cartonasul si intrebarea de pe verso
+components/room-3d.tsx          cabinetul 3D (numele din cuburi: NAME)
+lib/notify.ts                   textul notificarii
