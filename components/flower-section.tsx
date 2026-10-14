@@ -1,6 +1,5 @@
-import { FlowerAnimation } from "./flower-animation";
 import { CartonasCard } from "./cartonas-card";
-import { PortraitStage } from "./portrait-stage";
+import { RewardStage } from "./reward-stage";
 
 export function FlowerSection() {
   return (
@@ -23,13 +22,8 @@ export function FlowerSection() {
         </p>
       </div>
 
-      {/* Portretul ei, in mijlocul buchetului */}
-      <PortraitStage />
-
-      {/* Flower animation container */}
-      <div className="relative h-[46vmin] overflow-visible">
-        <FlowerAnimation />
-      </div>
+      {/* Florile si, dupa acceptare, portretul ei */}
+      <RewardStage />
 
       {/* Closing message */}
       <div className="relative z-10 text-center mt-8 px-4">

@@ -73,6 +73,8 @@ export default function Portrait3D({ onReady, onContextLost }: { onReady?: () =>
     <Canvas
       camera={{ position: [0, 0.1, 3.3], fov: 26 }}
       dpr={[1, 2]}
+      // Masuram fara transformari CSS, altfel animatia de ridicare (scale) micsoreaza canvasul
+      resize={{ offsetSize: true }}
       gl={{ alpha: true, antialias: true }}
       onCreated={({ gl }) => gl.domElement.addEventListener("webglcontextlost", () => onContextLost?.())}
     >

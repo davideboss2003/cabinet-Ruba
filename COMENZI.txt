@@ -31,4 +31,6 @@ components/room-explorer.tsx    domeniile, "Stiai ca?" si mesajele
 components/communication-strip.tsx  banda cu pictograme (propozitia: sentence)
 components/cartonas-card.tsx    cartonasul si intrebarea de pe verso
 components/room-3d.tsx          cabinetul 3D (numele din cuburi: NAME)
+components/reward-stage.tsx       florile + portretul 3D (apare dupa "Accept Planul"), placuta aurie
+public/anto.glb                   modelul 3D (micsorat cu gltf-transform)
 lib/notify.ts                   textul notificarii
