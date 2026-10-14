@@ -4,6 +4,8 @@ const repo = 'cabinet-Ruba';
 
 const nextConfig = {
   output: "export",
+  // Doar pentru testul de pe telefon in reteaua de acasa (npm run dev)
+  allowedDevOrigins: ['192.168.1.135'],
   basePath: `/${repo}`,
   assetPrefix: `/${repo}/`,
   env: {
