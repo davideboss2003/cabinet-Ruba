@@ -15,7 +15,7 @@ function hasWebGL() {
   }
 }
 
-// Buchetul de la final, cu portretul ei 3D si placuta "Terapeutul anului".
+// Buchetul de la final, cu portretul ei 3D si placuta "Psihologul anului".
 // Nu depinde de "Accept Planul": modelul se descarca din timp si bustul se ridica
 // dintre flori cand ajunge pe ecran. Fara WebGL raman doar florile.
 export function RewardStage() {
@@ -93,7 +93,7 @@ export function RewardStage() {
               Antonia Ariadna Ruba
             </p>
             <p className="font-sans text-[10px] md:text-xs uppercase tracking-[0.25em] text-[#6b4e14]">
-              Terapeutul anului
+              Psihologul anului
             </p>
           </div>
         </div>
