@@ -4,9 +4,7 @@ import { useEffect, useState, type ReactNode } from "react";
 import { notifyAccepted } from "@/lib/notify";
 import { SpeechStar, StarShape } from "./site-decorations";
 
-export const STORAGE_KEY = "plan-acceptat-antonia";
-// Anunta recompensa de jos (portretul) ca planul a fost acceptat
-export const PLAN_ACCEPTED_EVENT = "plan-acceptat";
+const STORAGE_KEY = "plan-acceptat-antonia";
 
 function Confetti() {
   const colors = ["var(--accent)", "var(--rose)", "var(--mint)", "var(--primary)"];
@@ -98,7 +96,6 @@ export function CartonasCard() {
     setShowConfetti(true);
     setTimeout(() => setShowConfetti(false), 2800);
     setAccepted(true);
-    window.dispatchEvent(new Event(PLAN_ACCEPTED_EVENT));
     notifyAccepted().then((sent) => {
       if (!sent) return;
       try {
